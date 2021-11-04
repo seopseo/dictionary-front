@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en">  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +7,17 @@
     <title>사전 검색 서비스</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <ul id="ee">
-        <h1><a href="http://127.0.0.1:5500/">사전 검색 서비스</a></h1>
-        <!-- 검색창 -->
-        <div id="search-box">
+    <!-- 검색창 -->
+    <div id="search-box">
+        <input id="search" type="text" value="" placeholder="단어를 검색하세요 ...">
+        <input id="submit" type="submit" value="submit">
+    </div>
 
-            <input id="search" type="text" value="" placeholder="단어를 검색하세요..">
-            <input id="submit" type="submit" value="search">
-            <input id="btn" type="button" onclick="location.href='/'" value="Reset">
-            <p></p>
-            <hr>
-        </div>
-    </ul>
-
-    <div id="serend" style="margin-right: 68% ;"></div>
-    <hr style="border: solid 2px">
     <!-- 사전 -->
-    <div id="container"></div>
+    <div id="container">
+        <img src="https://www.icegif.com/wp-content/uploads/loading-icegif-1.gif"/>
+    </div>
     <script src="app.js"></script>
 </body>
-
 </html>
